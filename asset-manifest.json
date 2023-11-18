@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Blanded-lesons-3/static/css/main.17654e45.css",
-    "main.js": "/Blanded-lesons-3/static/js/main.8ff361db.js",
+    "main.js": "/Blanded-lesons-3/static/js/main.50840567.js",
     "index.html": "/Blanded-lesons-3/index.html",
     "main.17654e45.css.map": "/Blanded-lesons-3/static/css/main.17654e45.css.map",
-    "main.8ff361db.js.map": "/Blanded-lesons-3/static/js/main.8ff361db.js.map"
+    "main.50840567.js.map": "/Blanded-lesons-3/static/js/main.50840567.js.map"
   },
   "entrypoints": [
     "static/css/main.17654e45.css",
-    "static/js/main.8ff361db.js"
+    "static/js/main.50840567.js"
   ]
 }
