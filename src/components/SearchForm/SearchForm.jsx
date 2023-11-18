@@ -1,37 +1,39 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 
 import { FiSearch } from 'react-icons/fi';
 import { FormBtn, InputSearch, SearchFormStyled } from './SearchForm.styled';
+import { addTodo } from 'redux/actions';
 
-export const SearchForm = ({onSubmit}) => {
-  
-  const [query, setQuery] = useState("")
+export const SearchForm = () => {
+  const dispatch = useDispatch();
 
-  const  handleInput = e => {
-    setQuery( e.currentTarget.value)
+  const [query, setQuery] = useState('');
+
+  const handleInput = e => {
+    setQuery(e.currentTarget.value);
   };
 
-   const  handleSubmit = e => {
+  const handleSubmit = e => {
     e.preventDefault();
-onSubmit(query);
+    dispatch(addTodo(query));
 
- setQuery("")
+    setQuery('');
   };
 
-
-    return (
-      <SearchFormStyled onSubmit={handleSubmit}>
-        <FormBtn type="submit">
-          <FiSearch size="16px" />
-        </FormBtn>
-        <InputSearch
-          onChange={handleInput}
-          placeholder="What do you want to write?"
-          name="search"
-          required
-          value={query}
-          autoFocus
-        />
-      </SearchFormStyled>
-    );
-  }
+  return (
+    <SearchFormStyled onSubmit={handleSubmit}>
+      <FormBtn type="submit">
+        <FiSearch size="16px" />
+      </FormBtn>
+      <InputSearch
+        onChange={handleInput}
+        placeholder="What do you want to write?"
+        name="search"
+        required
+        value={query}
+        autoFocus
+      />
+    </SearchFormStyled>
+  );
+};
