@@ -7,5 +7,7 @@ export * from 'components/Container/Container.styled';
 export * from 'components/SearchForm/SearchForm';
 export * from 'components/SearchForm/SearchForm.styled';
 export * from 'components/Text/Text.styled';
+export * from 'components/Filter/Filter';
+export * from 'components/TodoList/TodoList';
 export * from 'components/Grid/Grid.styled';
 export * from 'components/Todo/Todo';

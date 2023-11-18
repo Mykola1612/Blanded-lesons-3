@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-
 import { FiSearch } from 'react-icons/fi';
+
 import { FormBtn, InputSearch, SearchFormStyled } from './SearchForm.styled';
+
 import { addTodo } from 'redux/actions';
 
 export const SearchForm = () => {
   const dispatch = useDispatch();
-
   const [query, setQuery] = useState('');
 
   const handleInput = e => {

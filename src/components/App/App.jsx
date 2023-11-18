@@ -1,9 +1,16 @@
 import { useSelector } from 'react-redux';
 
-import { Container, Header, SearchForm, Section, Text } from 'components';
-import { TodoList } from 'components/TodoList/TodoList';
+import {
+  Header,
+  Section,
+  Container,
+  SearchForm,
+  Text,
+  Filter,
+  TodoList,
+} from 'components';
+
 import { getTodos } from 'redux/selectors';
-import { Filter } from 'components/Filter/Filter';
 
 export const App = () => {
   const todos = useSelector(getTodos);

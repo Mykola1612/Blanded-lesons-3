@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 
 import { Grid, GridItem, Todo } from 'components';
+
 import { selectFilteredTodos } from 'redux/selectors';
 
 export const TodoList = () => {
